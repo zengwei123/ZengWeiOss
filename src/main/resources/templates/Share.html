@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Title</title>
+        <LINK REL="stylesheet" HREF="../static/mycss/Share/share.css"/>
+    </head>
+    <body>
+        <div id="head">
+            <img src="../static/Image/猪.png"/>
+            <Span style="position: absolute;font-size: 25px;margin-top: 22px"><a href="https://zengwei123.github.io/">ZengWei</a></Span>
+        </div>
+        <div id="body">
+            <div class="body_margin" style="width: 100%;height: 90%;">
+                <div style="text-align: center;margin: 0 auto;margin-top: 5%">
+                    <span style="font-size: 25px;color: #FF534D " id="fileName"></span><br/><br/>
+                    <img id="imgs"/>
+                </div>
+                <div style="text-align: center;margin: 0 auto;margin-top: 2%">
+                    <span>点击下载或扫描二维码下载</span><br/><br/>
+                    <a id="xiazai">点击下载</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function GetRequest() {
+                var url = location.search; //获取url中"?"符后的字串
+                var str=url.split("=");
+                return str;
+            }
+            var  Request = GetRequest();
+        </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/myjs/my.js"></script>
+        <script src="../static/myjs/Share/share.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Home</title>
+        <link rel='stylesheet' href="../static/mycss/Home/home.css"/>
+        <LINK REL="stylesheet" HREF="../static/CSS/quick-modal.min.css"/>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <img src="../static/Image/猪.png"/>
+            <Span style="position: absolute;font-size: 25px;margin-top: 22px"><a href="https://zengwei123.github.io/">ZengWei</a></Span>
+        </div>
+        <div id="body">
+            <div class="body_margin" style="width: 100%;height: 90%">
+                <Ul class="ul_style">
+                    <Li id="put_Flie" class="ul_li_style_1" data-modal-id="my-modal1"><img style="float: left" src="../static/Image/上传.png"/><span >上传文件</span></Li>
+                    <Li id="new_Folder" data-modal-id="my-modal" class="ul_li_style_1"><img style="float: left" src="../static/Image/新建.png"/><span >新建文件夹</span></Li>
+                    <Li id="delete_File" data-modal-id="my-modal2" class="ul_li_style_1"><img style="float: left" src="../static/Image/删除.png"/><span >删除文件</span></Li>
+                </Ul>
+                <div class="ul_style" style="margin-top: 70px;width: 95%">
+                    <img id="file_back" src="../static/Image/返回.png"/>
+                    <span id="url_file" style="margin-left: 15px">
+                        <a href="#" onclick="getfile_list()">...</a>/
+                    </span>
+                </div>
+                <input id="quanxuan"  style="margin-left: 2%" type="checkbox"/>全选
+                <Ul id="file_list" class="ul_style" style="width: 95%;height: 80%;overflow: auto;">
+                    <!--<input style="float: left;margin-top: 10px" type="checkbox" disabled="disabled"/>-->
+                    <!--<Li class="ul_li_style_2">-->
+                        <!--<img style="float: left" src="../static/Image/上传.png"/>-->
+                        <!--<span >上传文件</span>-->
+                        <!--<a style="float: right;margin-right: 20px">删除</a>-->
+                    <!--</Li>-->
+                    <!--<input style="float: left;margin-top: 10px" type="checkbox"/>-->
+                    <!--<Li class="ul_li_style_2"><img style="float: left" src="../static/Image/新建.png"/><span >新建文件夹</span></Li>-->
+                    <!--<input style="float: left;margin-top: 10px" type="checkbox"/>-->
+                    <!--<Li class="ul_li_style_2"><img style="float: left" src="../static/Image/分享.png"/><span >分享文件</span></Li>-->
+                    <!--<input style="float: left;margin-top: 10px" type="checkbox"/>-->
+                    <!--<Li class="ul_li_style_2"><img style="float: left" src="../static/Image/删除.png"/><span >删除文件</span></Li>-->
+                    <!--<input style="float: left;margin-top: 10px" type="checkbox" disabled="disabled"/>-->
+                </Ul>
+            </div>
+        </div>
+        <!--新建文件夹模态-->
+        <div id="my-modal" class="qm-modal">
+            <h1>新建文件</h1>
+            <p>请输入文件夹的名
+            <p>
+                <input id="new_Folder_input_1" value="sad" type="text" style="width: 100%;height: 30px;margin-top: 5px"/>
+            </p>
+            </p>
+            <a href="#" class="qm-close-modal"></a>
+            <a href="#" id="yes-button" class="button_z">确定</a>
+        </div>
+        <!--上传分组模态-->
+        <div id="my-modal1" class="qm-modal">
+            <div id="modal1_div" style="display: block">
+                <h1>上传文件</h1>
+                <p>请选择需要上传的文件
+                <p>
+                    <input id="put_File_input_1" value="sad" type="file" style="width: 100%;height: 30px;margin-top: 5px"/>
+                </p>
+                </p>
+            </div>
+            <div id="modal1_div1" style="display: none;height: 136px">
+                <h2 style="margin-left: 8%">上传进度</h2>
+                <div id="jin_div">
+                    <div id="sun_a" style="height: 100%;width: 0%;background: #00b4ef"></div>
+                </div>
+                <p id="sun_b" style="position: absolute;margin-left:47%;margin-top: 45px;">50%</p>
+            </div>
+            <a href="#" class="qm-close-modal"></a>
+            <a href="#" id="put-button" class="button_z">确定</a>
+        </div>
+        <!--新建文件夹模态-->
+        <div id="my-modal2" class="qm-modal">
+            <h1>批量删除文件</h1>
+            <p>注意：删除的文件不可恢复！</p>
+            <a href="#" class="qm-close-modal"></a>
+            <a href="#" id="delete-button" class="button_z">确定</a>
+        </div>
+        <!--分享文件模态-->
+        <div id="my-modal3" class="qm-modal">
+            <h1>分享文件</h1>
+            <p>是否分享此文件？分享链接5小时内有效！</p>
+            文件路径：<span id="share_span" style="color: red"></span><br/>
+            下载路径：<input id="share_url" style="color: red;height: 35px;width: 100%"/>
+            <a href="#" id="ccc_close" class="qm-close-modal"></a>
+            <a href="#" id="share_s" class="button_z">生成下载链接</a>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/js/jquery.quick-modal.js"></script>
+        <script src="../static/myjs/my.js"></script>
+        <script src="../static/myjs/Home/WebSocket.js"></script>
+        <script src="../static/myjs/Home/home.js"></script>
+    </body>
+</html>

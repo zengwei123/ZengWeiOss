@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Class-Path: validation-api-1.1.0.Final.jar logback-classic-1.1.9.jar h
+ ttpclient-4.5.2.jar shiro-crypto-cipher-1.4.0.jar shiro-cache-1.4.0.j
+ ar jdom-1.1.jar shiro-core-1.4.0.jar spring-boot-starter-thymeleaf-1.
+ 5.1.RELEASE.jar spring-context-4.3.6.RELEASE.jar spring-web-4.3.6.REL
+ EASE.jar javassist-3.21.0-GA.jar shiro-config-core-1.4.0.jar commons-
+ collections-3.2.2.jar spring-boot-starter-1.5.1.RELEASE.jar shiro-eve
+ nt-1.4.0.jar bcprov-jdk15on-1.55.jar log4j-over-slf4j-1.7.22.jar shir
+ o-config-ogdl-1.4.0.jar mybatis-spring-boot-autoconfigure-1.3.1.jar j
+ ava-jwt-3.1.0.jar ognl-3.0.8.jar jackson-databind-2.8.6.jar spring-me
+ ssaging-4.3.6.RELEASE.jar thymeleaf-2.1.5.RELEASE.jar slf4j-api-1.7.2
+ 2.jar spring-aop-4.3.6.RELEASE.jar tomcat-embed-core-8.5.11.jar sprin
+ g-boot-starter-logging-1.5.1.RELEASE.jar tomcat-juli-8.5.11.jar tomca
+ t-embed-el-8.5.11.jar jackson-core-2.8.6.jar spring-beans-4.3.6.RELEA
+ SE.jar spring-boot-starter-jdbc-1.5.1.RELEASE.jar jul-to-slf4j-1.7.22
+ .jar thymeleaf-spring4-2.1.5.RELEASE.jar groovy-2.4.7.jar classmate-1
+ .3.3.jar spring-jdbc-4.3.6.RELEASE.jar shiro-web-1.4.0.jar hibernate-
+ validator-5.3.4.Final.jar snakeyaml-1.17.jar shiro-crypto-core-1.4.0.
+ jar spring-websocket-4.3.6.RELEASE.jar lombok-1.12.6.jar httpcore-4.4
+ .6.jar unbescape-1.1.0.RELEASE.jar gson-2.8.2.jar spring-boot-starter
+ -web-1.5.1.RELEASE.jar mysql-connector-java-5.1.39.jar logback-core-1
+ .1.9.jar spring-core-4.3.6.RELEASE.jar shiro-lang-1.4.0.jar spring-bo
+ ot-autoconfigure-1.5.1.RELEASE.jar spring-boot-starter-websocket-1.5.
+ 1.RELEASE.jar jackson-annotations-2.8.0.jar jcl-over-slf4j-1.7.22.jar
+  aliyun-sdk-oss-2.8.3.jar tomcat-jdbc-8.5.11.jar spring-expression-4.
+ 3.6.RELEASE.jar mybatis-spring-1.3.1.jar tomcat-embed-websocket-8.5.1
+ 1.jar mybatis-spring-boot-starter-1.3.1.jar mybatis-3.4.5.jar spring-
+ tx-4.3.6.RELEASE.jar shiro-spring-1.4.0.jar thymeleaf-layout-dialect-
+ 1.4.0.jar spring-webmvc-4.3.6.RELEASE.jar spring-boot-devtools-1.5.1.
+ RELEASE.jar commons-codec-1.10.jar commons-beanutils-1.9.3.jar spring
+ -boot-1.5.1.RELEASE.jar jboss-logging-3.3.0.Final.jar spring-boot-sta
+ rter-tomcat-1.5.1.RELEASE.jar shiro-crypto-hash-1.4.0.jar
+Main-Class: com.zw.StartApp
+
